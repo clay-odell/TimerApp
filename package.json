@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://clay-odell.github.io/",
+  "homepage": "https://clay-odell.github.io/TimerApp",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
