@@ -54,8 +54,8 @@ const Timer = () => {
         onChange={handleInputChange}
         placeholder="Enter minutes..."
       />
-      <button onClick={startTimer}>Start Timer</button>
-      <button onClick={resetTimer}>Reset Timer</button>
+      <button className="start" onClick={startTimer}>Start Timer</button>
+      <button className="reset" onClick={resetTimer}>Reset Timer</button>
       <h1>
         {timeLeft !== null
           ? typeof timeLeft === "string"
@@ -63,7 +63,7 @@ const Timer = () => {
             : `${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, "0")}`
           : "Enter a time to begin"}
       </h1>
-      <audio ref={alarmRef} src="/alarm_clock.mp3" />
+      <audio ref={alarmRef} src="/TimerApp/alarm_clock.mp3" />
     </div>
   );
 };
